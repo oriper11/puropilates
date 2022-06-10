@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: orange;
+  height: 150px;
+}
+
+.logo {
+  background-color: orangered;
+  height: 100px;
+  padding: 30px;
+}
+.logo h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 70px;
+  color: black;
+  text-align: center;
+}
+
+.nav {
+  background-color: rgb(246, 182, 64);
+  height: 100px;
+  padding: 25px;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: rgb(249, 249, 173);
+  border-radius: 5px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  text-transform: capitalize;
+}
+.nav a:hover {
+  color: orange;
+}
+
+.nav button {
+  border-color: rgb(249, 249, 173);
+  box-shadow: 10px white;
+}
+.nav button:hover {
+  background-color: rgb(249, 249, 173);
+  border-color: white;
+}
+
+h2 {
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  background-color: rgb(246, 182, 64);
+}
+
+.conteiner-fluid {
+  background-color: rgb(249, 249, 173);
+  width: 100%;
+  padding: 20px;
+}
+.conteiner-fluid .indcaja1 {
+  transform: scale 1.7;
+  transition: all 2s;
+}
+.conteiner-fluid .indcaja1:hover {
+  padding: 16px;
+  position: sticky;
+}
+
+.indcaja2 {
+  width: 100%;
+  height: 380px;
+  padding: 16px;
+  background-image: url(./img/elongacion\ isquios.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  text-align: center justify;
+}
+
+.indcaja2 p {
+  background: rgb(249, 249, 173);
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  animation-name: animate__rubberBand;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate__rubberBand {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.indcaja2 p {
+  color: orange;
+  border: 5px rgb(246, 182, 64);
+}
+
+.conteiner-fluid {
+  background-color: rgb(249, 249, 173);
+  width: 100%;
+  padding: 20px;
+  border-radius: 2px solid orangered;
+  text-align: center;
+  font-size: "Rubik", sans-serif;
+}
+
+.box1, .box3, .box2 {
+  background-color: rgb(246, 182, 64);
+  font-family: "Rubik", sans-serif;
+  text-align: center justify;
+}
+.box1:hover, .box3:hover, .box2:hover {
+  background-color: rgb(249, 249, 173);
+}
+
+.call2 a {
+  width: 80px;
+  height: 40px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  color: orangered;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+}
+
+.call3 a {
+  width: 80px;
+  height: 40px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  color: orangered;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+}
+
+.cuadro {
+  padding: 20px;
+  border-radius: 5px solid rgb(249, 249, 173);
+  font-size: 15px;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+.cuadro:hover {
+  color: orange;
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+.data-active {
+  color: orangered;
+}
+
+.CONTACTO {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn-outline-primary {
+  color: orangered;
+  border-color: orangered;
+}
+
+.redes {
+  background-color: orangered;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100px;
+  color: black;
+  list-style: none;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  font-family: "Bebas Neue", cursive;
+}
+
+.fa-brands {
+  color: black;
+  height: 40px;
+}
+
+.fab {
+  color: black;
+  height: 40px;
+}
+
+.footer {
+  font-family: "Bebas Neue", cursive;
+  font-size: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+.subir {
+  height: 50px;
+  width: 50px;
+  background-color: orangered;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 5px solid white;
+  color: white;
+  box-shadow: 1 1 10px white;
+}
+.subir {
+  animation-duration: 3s;
+  animation-name: animate__rubberBand;
+  animation-delay: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate__rubberBand {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

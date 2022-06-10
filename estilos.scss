@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@300&display=swap');
+$letra1: 'Bebas Neue', cursive;
+$letra2: 'Rubik', sans-serif;
+
+$color1:orange;
+$color2:orangered;
+$color4: rgb(246, 182, 64);
+$color5:rgb(249, 249, 173);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: $color1;
+    height: 150px;
+
+}
+
+.logo{    
+    background-color: $color2;
+    height: 100px;
+    padding: 30px;
+    h1{
+        font-family: $letra1;
+        font-size: 70px;
+        color: black;
+        text-align: center;
+    }
+}
+.nav{
+    background-color:rgb(246, 182, 64);
+    height: 100px;
+    padding: 25px;
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    font-family: $letra2;
+    font-size: 20px;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: $color5;
+    border-radius: 5px;
+}
+.nav a{
+    text-decoration: none;
+    color:black;
+    font-family: $letra2;
+    text-transform: capitalize;
+        &:hover{
+        color:$color1;   
+    }
+}
+.nav button{
+    border-color: $color5;
+    box-shadow: 10px white;
+
+        &:hover{
+        background-color:$color5;
+        border-color: white;
+    }
+}
+
+h2{
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    text-align: center;
+    font-family:$letra1;
+    font-size: 30px;
+    background-color: $color4;
+
+}
+.conteiner-fluid{
+    background-color: $color5;
+    width: 100%;
+    padding: 20px;
+
+    .indcaja1{
+    transform: scale (1.7);
+    transition: all 2s;
+        &:hover{
+        padding: 16px;
+        position: sticky;
+        }
+    }
+}
+    .indcaja2 {
+    width: 100%;
+    height:380px;
+    padding: 16px;
+    background-image: url(./img/elongacion\ isquios.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    color: black;
+    font-family:$letra2;
+    text-align: center justify;
+    }
+        .indcaja2 p {
+        background: $color5;    
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;
+        animation-name: animate__rubberBand;
+        animation-duration: 5s;
+        animation-direction: alternate;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
+            }
+                @keyframes animate__rubberBand {
+                    0%{
+                        opacity: 0;
+
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+
+$animal:35px;
+.indcaja2 p{
+@if $animal == 15px {
+    color:orangered;
+    border: 2px rgb(249, 249, 173);
+}
+@else if $animal == 35px {
+    color: orange;
+    border: 5px rgb(246, 182, 64);
+}
+@else if $animal == 45px{
+    color:red;
+    border: 10px rgb(249, 249, 173);
+}
+@else {
+    color:black;
+    border: 2px orange;
+}
+}
+.conteiner-fluid{
+    background-color: $color5;
+    width: 100%;
+    padding: 20px;
+    border-radius: 2px solid $color2;
+    text-align: center;
+    font-size: $letra2;
+    }
+    @mixin sizes ($min-height,$pading,$border){
+        $min-height:ancho;
+        $padding:margen;
+        $border:borde;
+    } 
+    .box{
+        @include sizes(100px,20px ,5px);
+    }
+.box1{
+    background-color: $color4;
+    font-family:$letra2;
+    text-align: center justify;
+        &:hover{
+        background-color: $color5;
+        }
+}
+.box2{
+   @extend .box1
+}
+.call2 a{
+    width: 80px;
+    height: 40px;
+    padding: 5px 5px;
+    border-radius:5px;
+    color: orangered;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    
+}
+.box3{
+   @extend .box1
+}
+.call3 a{
+    width: 80px;
+    height: 40px;
+    padding: 5px 5px;
+    border-radius:5px;
+    color: orangered;
+    text-decoration: none;
+    font-size: 15px;    
+    text-align: center;
+    
+}
+.cuadro{
+    padding: 20px;
+    border-radius: 5px solid $color5;
+    font-size: 15px;
+    font-family: $letra2;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    &:hover{
+        color: $color1;
+        }
+}
+.carousel-inner{
+    text-align: center;
+    
+}
+.data-active{    
+    color: $color2;
+}
+
+.CONTACTO{
+    font-family: $letra2;
+    font-size: 20px;
+    text-align: center;
+}
+.btn-outline-primary{
+    color: $color2;
+    border-color: $color2;
+}
+
+.redes{
+    background-color: $color2;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100px;
+    color: black;
+    list-style:none;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-family: $letra1;
+    
+}
+.fa-brands{
+    color: black;
+    height: 40px;
+}
+.fab{
+color: black;
+height: 40px;
+}
+.footer{
+    font-family:$letra1;
+    font-size: 10px;
+    padding: 30px;
+    text-align: center;
+}
+.subir {
+    height: 50px;
+    width: 50px;
+    background-color: $color2;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 5px solid white;
+    color: white;
+    box-shadow: 1 1 10px white;   
+        &{
+            animation-duration: 3s;
+            animation-name: animate__rubberBand;
+            animation-delay: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    }
+@keyframes animate__rubberBand {
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
