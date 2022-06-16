@@ -60,6 +60,10 @@
   border-color: white;
 }
 
+.imgs {
+  filter: brightness(70%);
+}
+
 h2 {
   width: 100%;
   height: 60px;
@@ -78,6 +82,7 @@ h2 {
 .conteiner-fluid .indcaja1 {
   transform: scale 1.7;
   transition: all 2s;
+  filter: brightness(70%);
 }
 .conteiner-fluid .indcaja1:hover {
   padding: 16px;
@@ -88,10 +93,10 @@ h2 {
   width: 100%;
   height: 380px;
   padding: 16px;
-  background-image: url(./img/elongacion\ isquios.jpg);
-  background-size: cover;
+  background-color: rgb(249, 249, 173);
+  background-size: contain;
   background-repeat: no-repeat;
-  font-size: 15px;
+  font-size: 20px;
   color: black;
   font-family: "Rubik", sans-serif;
   text-align: center justify;
@@ -102,42 +107,28 @@ h2 {
   border-radius: 5px;
   padding: 5px;
   text-align: center;
-  animation-name: animate__rubberBand;
-  animation-duration: 5s;
-  animation-direction: alternate;
-  animation-delay: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes animate__rubberBand {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.indcaja2 p {
-  color: orange;
-  border: 5px rgb(246, 182, 64);
 }
 
 .conteiner-fluid {
   background-color: rgb(249, 249, 173);
   width: 100%;
   padding: 20px;
-  border-radius: 2px solid orangered;
   text-align: center;
   font-size: "Rubik", sans-serif;
 }
 
 .box1, .box3, .box2 {
+  border-radius: 2px solid orangered;
   background-color: rgb(246, 182, 64);
   font-family: "Rubik", sans-serif;
   text-align: center justify;
 }
 .box1:hover, .box3:hover, .box2:hover {
   background-color: rgb(249, 249, 173);
+}
+
+.box2 {
+  border-radius: 5px solid orangered;
 }
 
 .call2 a {
@@ -149,6 +140,10 @@ h2 {
   text-decoration: none;
   font-size: 15px;
   text-align: center;
+}
+
+.box3 {
+  border-radius: 2px solid orangered;
 }
 
 .call3 a {
@@ -179,8 +174,30 @@ h2 {
   text-align: center;
 }
 
-.data-active {
+.carousel-item {
+  filter: brightness(70%);
+}
+
+.conteiner-fluid2 {
+  background-color: rgb(249, 249, 173);
+  text-align: center;
+}
+.conteiner-fluid2 p {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+
+.cuad1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  text-align: justify center;
+}
+.cuad1:hover {
   color: orangered;
+}
+
+.cuad2 {
+  filter: brightness(70%);
 }
 
 .CONTACTO {

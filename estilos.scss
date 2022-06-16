@@ -64,6 +64,9 @@ $color5:rgb(249, 249, 173);
         border-color: white;
     }
 }
+.imgs{
+    filter: brightness(70%);
+}
 
 h2{
     width: 100%;
@@ -83,20 +86,23 @@ h2{
     .indcaja1{
     transform: scale (1.7);
     transition: all 2s;
+    filter: brightness(70%);
+
         &:hover{
         padding: 16px;
         position: sticky;
         }
+
     }
 }
     .indcaja2 {
     width: 100%;
     height:380px;
     padding: 16px;
-    background-image: url(./img/elongacion\ isquios.jpg);
-    background-size: cover;
+    background-color: $color5;
+    background-size: contain;
     background-repeat: no-repeat;
-    font-size: 15px;
+    font-size: 20px;
     color: black;
     font-family:$letra2;
     text-align: center justify;
@@ -106,46 +112,11 @@ h2{
         border-radius: 5px;
         padding: 5px;
         text-align: center;
-        animation-name: animate__rubberBand;
-        animation-duration: 5s;
-        animation-direction: alternate;
-        animation-delay: 5s;
-        animation-iteration-count: infinite;
-            }
-                @keyframes animate__rubberBand {
-                    0%{
-                        opacity: 0;
-
-                    }
-                    100%{
-                        opacity: 1;
-                    }
-                }
-
-$animal:35px;
-.indcaja2 p{
-@if $animal == 15px {
-    color:orangered;
-    border: 2px rgb(249, 249, 173);
-}
-@else if $animal == 35px {
-    color: orange;
-    border: 5px rgb(246, 182, 64);
-}
-@else if $animal == 45px{
-    color:red;
-    border: 10px rgb(249, 249, 173);
-}
-@else {
-    color:black;
-    border: 2px orange;
-}
-}
+        }
 .conteiner-fluid{
     background-color: $color5;
     width: 100%;
     padding: 20px;
-    border-radius: 2px solid $color2;
     text-align: center;
     font-size: $letra2;
     }
@@ -158,6 +129,7 @@ $animal:35px;
         @include sizes(100px,20px ,5px);
     }
 .box1{
+    border-radius: 2px solid $color2;
     background-color: $color4;
     font-family:$letra2;
     text-align: center justify;
@@ -166,7 +138,9 @@ $animal:35px;
         }
 }
 .box2{
-   @extend .box1
+   @extend .box1;
+   border-radius: 5px solid $color2;
+   
 }
 .call2 a{
     width: 80px;
@@ -180,7 +154,9 @@ $animal:35px;
     
 }
 .box3{
-   @extend .box1
+   @extend .box1;
+   border-radius: 2px solid $color2;
+  
 }
 .call3 a{
     width: 80px;
@@ -209,11 +185,32 @@ $animal:35px;
     text-align: center;
     
 }
-.data-active{    
-    color: $color2;
-}
+.carousel-item{
+    filter: brightness(70%);
 
-.CONTACTO{
+}
+.conteiner-fluid2{
+    background-color: rgb(249, 249, 173);
+    text-align: center;
+    p {
+        font-family: $letra2;
+        font-size: 20px;
+    }
+}
+.cuad1{
+    font-family: $letra2;
+    font-size: 18px;
+    text-align: justify center;
+        &:hover{
+            color: $color2;
+        }
+
+}
+.cuad2{
+    filter: brightness(70%);
+
+}
+.CONTACTO {
     font-family: $letra2;
     font-size: 20px;
     text-align: center;
