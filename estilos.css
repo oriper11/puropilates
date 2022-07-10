@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Maven+Pro&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,55 +12,43 @@
 
 .logo {
   background-color: orangered;
-  height: 100px;
   padding: 30px;
 }
 .logo h1 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 70px;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 60px;
   color: black;
   text-align: center;
 }
 
-.nav {
-  background-color: rgb(246, 182, 64);
-  height: 100px;
-  padding: 25px;
+.navbar {
+  background-color: #f6b640 !important;
   display: inline;
-  text-align: center;
+  padding: 30px;
   text-decoration: none;
-  font-family: "Rubik", sans-serif;
-  font-size: 20px;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 30px;
+  color: black;
+  align-content: center;
 }
 
-.nav ul li {
+.navbar ul li {
   list-style: none;
   display: inline-block;
-  margin-right: 10px;
-  background-color: rgb(249, 249, 173);
-  border-radius: 5px;
+  text-align: center;
 }
 
-.nav a {
+.navbar-nav a {
   text-decoration: none;
-  color: black;
-  font-family: "Rubik", sans-serif;
-  text-transform: capitalize;
+  color: black !important;
+  font-family: "Fjalla One", sans-serif;
 }
-.nav a:hover {
-  color: orange;
-}
-
-.nav button {
-  border-color: rgb(249, 249, 173);
-  box-shadow: 10px white;
-}
-.nav button:hover {
-  background-color: rgb(249, 249, 173);
-  border-color: white;
+.navbar-nav a:hover {
+  color: #f9f9ad !important;
 }
 
-.imgs {
+.conteiner-fluid1 {
+  background-image: url(img/6A411301-F743-4E85-A580-67AB0F19\ \(1\).jpg);
   filter: brightness(70%);
 }
 
@@ -69,13 +57,27 @@ h2 {
   height: 60px;
   padding: 20px;
   text-align: center;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Fjalla One", sans-serif;
   font-size: 30px;
-  background-color: rgb(246, 182, 64);
+  background-color: #f6b640;
+}
+h2 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .conteiner-fluid {
-  background-color: rgb(249, 249, 173);
+  background-color: #f9f9ad;
   width: 100%;
   padding: 20px;
 }
@@ -83,6 +85,7 @@ h2 {
   transform: scale 1.7;
   transition: all 2s;
   filter: brightness(70%);
+  object-fit: contain;
 }
 .conteiner-fluid .indcaja1:hover {
   padding: 16px;
@@ -92,39 +95,33 @@ h2 {
 .indcaja2 {
   width: 100%;
   height: 380px;
-  padding: 16px;
-  background-color: rgb(249, 249, 173);
-  background-size: contain;
-  background-repeat: no-repeat;
-  font-size: 20px;
-  color: black;
-  font-family: "Rubik", sans-serif;
-  text-align: center justify;
+  padding: 14px;
+  border-radius: 5px solid #f6b640;
 }
 
 .indcaja2 p {
-  background: rgb(249, 249, 173);
-  border-radius: 5px;
-  padding: 5px;
+  font-size: 18px;
+  color: black;
+  font-family: "Maven Pro", sans-serif;
   text-align: center;
 }
 
 .conteiner-fluid {
-  background-color: rgb(249, 249, 173);
+  background-color: #f9f9ad;
   width: 100%;
   padding: 20px;
   text-align: center;
-  font-size: "Rubik", sans-serif;
+  font-size: "Maven Pro", sans-serif;
 }
 
 .box1, .box3, .box2 {
   border-radius: 2px solid orangered;
-  background-color: rgb(246, 182, 64);
-  font-family: "Rubik", sans-serif;
+  background-color: #f6b640;
+  font-family: "Maven Pro", sans-serif;
   text-align: center justify;
 }
 .box1:hover, .box3:hover, .box2:hover {
-  background-color: rgb(249, 249, 173);
+  background-color: #f9f9ad;
 }
 
 .box2 {
@@ -159,9 +156,9 @@ h2 {
 
 .cuadro {
   padding: 20px;
-  border-radius: 5px solid rgb(249, 249, 173);
+  border-radius: 5px solid #f9f9ad;
   font-size: 15px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Maven Pro", sans-serif;
   text-align: center;
   justify-content: center;
   align-content: center;
@@ -177,18 +174,32 @@ h2 {
 .carousel-item {
   filter: brightness(70%);
 }
+.carousel-item {
+  animation-duration: 8s;
+  animation-name: animate__jello;
+  animation-iteration-count: initial;
+}
+@keyframes animate__jello {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 103;
+  }
+}
 
 .conteiner-fluid2 {
+  padding: 20px;
   background-color: rgb(249, 249, 173);
   text-align: center;
 }
 .conteiner-fluid2 p {
-  font-family: "Rubik", sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-size: 20px;
 }
 
 .cuad1 {
-  font-family: "Rubik", sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-size: 18px;
   text-align: justify center;
 }
@@ -201,7 +212,7 @@ h2 {
 }
 
 .CONTACTO {
-  font-family: "Rubik", sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-size: 20px;
   text-align: center;
 }
@@ -221,7 +232,8 @@ h2 {
   text-align: center;
   align-content: center;
   justify-content: center;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 20px;
 }
 
 .fa-brands {
@@ -235,7 +247,7 @@ h2 {
 }
 
 .footer {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Maven Pro", sans-serif;
   font-size: 10px;
   padding: 30px;
   text-align: center;
@@ -246,11 +258,12 @@ h2 {
   width: 50px;
   background-color: orangered;
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  padding: 5px;
+  bottom: 30px;
+  right: 30px;
   text-align: center;
-  line-height: 40px;
-  font-size: 25px;
+  line-height: 30px;
+  font-size: 32px;
   border-radius: 50%;
   border: 5px solid white;
   color: white;
@@ -259,7 +272,7 @@ h2 {
 .subir {
   animation-duration: 3s;
   animation-name: animate__rubberBand;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
