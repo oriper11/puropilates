@@ -175,16 +175,18 @@ h2 {
   filter: brightness(70%);
 }
 .carousel-item {
-  animation-duration: 8s;
+  animation-duration: 5s;
   animation-name: animate__jello;
   animation-iteration-count: initial;
 }
 @keyframes animate__jello {
-  0% {
-    opacity: 0;
+  from {
+    margin-left: 100%;
+    width: 300%;
   }
-  100% {
-    opacity: 103;
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
@@ -238,12 +240,14 @@ h2 {
 
 .fa-brands {
   color: black;
-  height: 40px;
+  height: 30px;
+  font-size: 30px;
 }
 
 .fab {
   color: black;
-  height: 40px;
+  height: 30px;
+  font-size: 30px;
 }
 
 .footer {
@@ -254,16 +258,16 @@ h2 {
 }
 
 .subir {
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   background-color: orangered;
   position: fixed;
-  padding: 5px;
+  padding: 2px;
   bottom: 30px;
   right: 30px;
   text-align: center;
   line-height: 30px;
-  font-size: 32px;
+  font-size: 30px;
   border-radius: 50%;
   border: 5px solid white;
   color: white;
