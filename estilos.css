@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .header {
@@ -227,8 +226,7 @@ h2 {
 .redes {
   background-color: orangered;
   position: absolute;
-  min-width: 100%;
-  min-height: 100px;
+  width: 100%;
   color: black;
   list-style: none;
   text-align: center;

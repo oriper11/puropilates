@@ -3,14 +3,13 @@ $letra1: 'Fjalla One', sans-serif;
 $letra2: 'Maven Pro', sans-serif;
 
 $color1:orange;
-$color2:orangered;
+$color2:rgb(255, 90, 0);
 $color4: #f6b640;
 $color5:#f9f9ad;
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 .header{
     background-color: $color1;
@@ -64,7 +63,7 @@ h2{
     padding: 20px;
     text-align: center;
     font-family:$letra1;
-    font-size: 30px;
+    font-size: 25px;
     background-color: $color4;
     & {
         animation-duration: 3s;
@@ -102,7 +101,6 @@ h2{
     .indcaja2 {
     width: 100%;
     height:380px;
-    padding: 14px;
     border-radius: 5px solid $color4;
     }
         .indcaja2 p {
@@ -117,7 +115,7 @@ h2{
     width: 100%;
     padding: 20px;
     text-align: center;
-    font-size: $letra2;
+    font-family: $letra2;
     }
     @mixin sizes ($min-height,$pading,$border){
         $min-height:ancho;
@@ -238,8 +236,7 @@ h2{
 .redes{
     background-color: $color2;
     position: absolute;
-    min-width: 100%;
-    min-height: 100px;
+    width: 100%;
     color: black;
     list-style:none;
     text-align: center;
